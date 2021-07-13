@@ -36,7 +36,10 @@ function App() {
           >
             My Portfolio
           </a>
-          <a className="github-link" href="#">
+          <a
+            className="github-link"
+            href="https://github.com/TimBTaylor/crypto-api"
+          >
             See code
           </a>
         </div>
