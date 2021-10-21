@@ -11,17 +11,24 @@
 
 .links {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
 }
 
 .portfolio-link,
 .github-link {
-  color: #006efa;
-  margin: 20px;
+  color: #000;
 }
 
 .portfolio-link:hover,
 .github-link:hover {
-  color: #000;
   text-decoration: none;
 }
 

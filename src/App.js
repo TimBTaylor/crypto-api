@@ -2,6 +2,8 @@ import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Coin } from "./Coin";
+import Portfolio from "./images/portfolio.svg";
+import Github from "./images/github.svg";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -30,18 +32,42 @@ function App() {
     <div className="coin-app">
       <div className="coin-search">
         <div className="links">
-          <a
-            className="portfolio-link"
-            href="https://timbtaylor.github.io/personal-portfolio/projects.html"
-          >
-            My Portfolio
-          </a>
-          <a
-            className="github-link"
-            href="https://github.com/TimBTaylor/crypto-api"
-          >
-            See code
-          </a>
+          <div className="links-container">
+            <a
+              href="https://www.timbtaylor.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Portfolio} alt="portfolio" />
+            </a>
+            <br />
+            <a
+              className="portfolio-link"
+              href="https://www.timbtaylor.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              My Portfolio
+            </a>
+          </div>
+          <div className="links-container">
+            <a
+              href="https://github.com/TimBTaylor/crypto-api"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Github} alt="github" />
+            </a>
+            <br />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="github-link"
+              href="https://github.com/TimBTaylor/crypto-api"
+            >
+              See code
+            </a>
+          </div>
         </div>
         <h1 className="coin-text">Crypto API</h1>
         <form>
